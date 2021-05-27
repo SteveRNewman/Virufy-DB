@@ -69,7 +69,7 @@ df_index = ["Sensitivity", "Specificity", "PPV", "NPV"]
     # st.dataframe(df.style.highlight_max(axis=0))
 
 if chart == 'Accuracy':
-    change_axis = st.sidebar.checkbox("Change Higlighted Axis", 1,0)
+    change_axis = st.sidebar.checkbox("Change Highlighted Axis", 1,0)
     age = st.sidebar.slider("Age Range", 18,80,(18, 80), 1)
     st.subheader("Results for: {}".format(country_list[0]))
     df = pd.DataFrame(index=df_index,
