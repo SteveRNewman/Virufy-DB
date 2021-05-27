@@ -1,4 +1,5 @@
 matplotlib==3.3.2
+sklearn
 altair==4.1.0
 appnope==0.1.0
 argh @ file:///home/conda/feedstock_root/build_artifacts/argh_1595627874344/work
