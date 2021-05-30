@@ -57,7 +57,7 @@ if country == 'All Countries' :
         df_allcountry_age = df_country_age[df_country_age['country']==country_name]
         result = df_allcountry_age.pcr_test_result
         #### for each model within each country: compute the confusion matrix and indicators  
-        for model_name in model_list[:-1]:
+        for model_name in model_list:
            
             pred = df_allcountry_age[model_name]
 
@@ -99,7 +99,7 @@ else:
     pcr_test_result = df_country_age['pcr_test_result']
 
 
-    for i in model_list[:-1]:
+    for i in model_list:
         # prediction
         pred = df_country_age[i]
         # confusion matrix
